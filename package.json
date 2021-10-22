@@ -8,7 +8,7 @@
     "export": "next export", 
     "dev": "node ssr-server.js",
     "build": "next build",
-    "start": "node ssr-server.js"
+    "start": "next build && node ssr-server.js"
   },
   "keywords": [],
   "author": "",
