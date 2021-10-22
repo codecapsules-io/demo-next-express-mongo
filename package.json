@@ -1,0 +1,24 @@
+{
+  "name": "demo-next-express-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ssr-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export": "next export",
+    "dev": "node ssr-server.js",
+    "build": "next build",
+    "start": "next build && next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "mongoose": "^5.13.7",
+    "axios": "^0.21.3"
+  }
+}
