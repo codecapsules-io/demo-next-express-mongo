@@ -5,10 +5,10 @@
   "main": "ssr-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "export": "next export",
+    "export": "next export", 
     "dev": "node ssr-server.js",
     "build": "next build",
-    "start": "next build && next start"
+    "start": "node ssr-server.js"
   },
   "keywords": [],
   "author": "",
