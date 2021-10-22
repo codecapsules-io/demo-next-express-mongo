@@ -14,16 +14,17 @@ const Index = () => {
   const postWithAxios = (e) => {
     e.preventDefault()
     const data = { name: name}
-    axios.post('/api/person', data)
+    axios.post('/api/user', data)
         .then(response => {
-          //console.log(response)
+          console.log(response)
           setNameId(response.data.id)
         })
   }
 
   const getWithAxios = (e) => {
     e.preventDefault()
-    axios.get('/api/person/' + nameId)
+    const data = { id: nameId}
+    axios.post('/api/username', data)
       .then(response => {
         console.log(response)
         setRetrievedName(response.data.name)
