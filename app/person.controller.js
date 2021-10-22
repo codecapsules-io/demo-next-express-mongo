@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("./models");
 const Person = db.person;
 
 // Create and Save
