@@ -7,7 +7,7 @@ const Index = () => {
     //   <p>Hello Next.js index page showing.</p>
     // </div>
 
-    const [name, setName] = useState("")
+  const [name, setName] = useState("")
   const [nameId, setNameId] = useState(null)
   const [retrievedName, setRetrievedName] = useState("")
 

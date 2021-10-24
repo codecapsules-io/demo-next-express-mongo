@@ -1,4 +1,5 @@
 const express = require('express')
+const bodyParser = require("body-parser");
 const next = require('next')
     
 const dev = process.env.NODE_ENV !== 'production'
@@ -9,8 +10,13 @@ app.prepare()
 .then(() => {
   const server = express()
 
-  require("./app/person.routes")(server);
-    
+  // parse requests of content-type - application/json
+  server.use(bodyParser.json());
+
+  // parse requests of content-type - application/x-www-form-urlencoded
+  server.use(bodyParser.urlencoded({ extended: true }));
+
+  server.use('/api/person', require('./app/person.routes'))
   server.get('*', (req, res) => {
     return handle(req, res)
   })
